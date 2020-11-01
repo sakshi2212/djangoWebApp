@@ -2,9 +2,9 @@ version: '3'
 
 services:
   web:
+    image: capstone
     build: .
     command: python manage.py runserver 0.0.0.0:8000
-    container_name: Capstone
     volumes: 
       - .:/Assignment
     ports:
