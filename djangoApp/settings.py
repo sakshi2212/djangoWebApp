@@ -26,7 +26,7 @@ SECRET_KEY = '#85zkhp*+0z3#_hd6c-))u075^%(*e&a4rt*ortx7#4rwa$%op'
 DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.99.100']
-
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -119,3 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.example-card{
+    margin: 0 auto;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    position:relative;
+}
+.head{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align:center
+}
+table {
+  width: 100%;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 80px;
+  max-width: 650px;
+  height: 500px;
+  background-color: white;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+body {
+  background-color: #17a2b8;
+  font-family:'Poppins';
+}
+.form-group{
+}
+ .footer{
+    margin-left:52px;
+    color:black;
+} 
+/* button{
+    color:white;
+    background:black;
+} */

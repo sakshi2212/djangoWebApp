@@ -1,4 +1,38 @@
-{% for abc in obj %}  
+<!-- {% for abc in obj %}  
     <p>{{ abc.name }}</p>  
-    <p>{{ abc.number }}</p>     
-{% endfor %} 
+    <p>{{ abc.year }}</p> 
+    <p>{{ abc.genre }}</p>    
+{% endfor %}  -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2>Movie Database</h2>           
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Movie</th>
+      <th scope="col">Year</th>
+      <th scope="col">Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for abc in obj %} 
+    <tr>
+      <td><p>{{ abc.name }}</p></td>
+      <td><p>{{ abc.year }}</p></td>
+      <td><p>{{ abc.genre }}</p></td>
+    </tr>
+   {% endfor %} 
+  </tbody>
+</table>
+</div>
